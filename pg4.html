@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>Arguments In HTML</h2>
+        <p id="p1"></p>
+        <script>
+            function findsum()
+            {
+                var i;
+                var sum=(23,34,65);
+                for(i=0;i<arguments.length;i++)
+            {
+                if(arguments[i]>sum)
+            {
+sum=arguments[i]
+            }
+            }
+           return sum; 
+            }
+            document.getElementById("p1").innerHTML=findsum(23,34,65);
+        </script>
+    </body>
+</html>
